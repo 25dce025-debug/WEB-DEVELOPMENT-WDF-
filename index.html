@@ -2,35 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page Title</title>
-    <style>
-        body {
-            /* Specifies the path to your image */
-            background-image: url("D:\\studenthub\\images\\1653903314142198723_3418152504953493_7608013727901633946_n.webp"); 
-            
-            /* Prevents the image from repeating/tiling */
-            background-repeat: no-repeat; 
-            
-            /* Ensures the image stretches to cover the entire screen */
-            background-size: cover; 
-            
-            /* Centers the image both vertically and horizontally */
-            background-position: center; 
-            
-            /* Keeps the image fixed in place while scrolling */
-            background-attachment: fixed; 
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
 </head>
 <body>
-    <h1 style="text-decoration:underline;">Student Hub Portal</h1>
-    <img src="D:\studenthub\images\logo.webp" alt="Student Hub Logo" width="auto" height="auto" margin="auto">
-    <br>
-    <hr>
-    <p> Welcome to the Student Hub Portal!</p>
-    <p> This portal is designed to provide students with easy access to resources, information, and tools that will help them succeed in their academic journey. Whether you're looking for study materials, campus news, or support services, the Student Hub Portal has you covered.
-    </p>
-    <p> Please log in to access your personalized dashboard and take full advantage of the features available to you.</p>
-    <button onclick="window.location.href='login.html'">Login</button>
+    
 </body>
 </html>
+<div class="opaque-background-container">
+  <h1 style="text-decoration: underline;">Student Hub Portal</h1>
+  <p>Welcome to the Student Hub Portal!</p>
+  <br>
+  <p>This is a website that provides a centralized platform for students to access various resources and services.</p>
+  <br>
+  <p>Click below to get started:</p>
+  <br>
+  <button style="padding: 20px; width: 300px; background-color: gray; color: black; border: none; border-radius: 5px; font-size: 20px;" onclick="window.location.href='D:\\studenthub\\pages\\dashboard.html'">Go to Dashboard</button>
+</div>
+<style>
+.opaque-background-container {
+  position: relative; /* Establishes a reference for the background layer */
+  width: 100%;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  /* Optional: Set a fallback color underneath to ensure readability */
+  background-color: #000000; 
+}
+
+/* Create the isolated background layer */
+.opaque-background-container::before {
+  content: ""; /* Required to render the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Or use shorthand -> inset: 0; */
+  
+  /* Apply your background properties here */
+  background-image: url('D:\\studenthub\\images\\1653903314142198723_3418152504953493_7608013727901633946_n.webp');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Makes the background stay in place during scroll */
+  
+  /* Adjust transparency (Value between 0.0 and 1.0) */
+  opacity: 0.4; 
+  
+  /* Places the image layer behind the text content */
+  z-index: 1; 
+}
+
+/* Ensure the text content renders cleanly over the background */
+.opaque-background-container * {
+  position: relative;
+  z-index: 2; /* Must be a higher value than the pseudo-element z-index */
+  color: #ffffff; /* Contrast text color */
+}
+</style>
+
