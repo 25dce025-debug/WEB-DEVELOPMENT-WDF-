@@ -186,3 +186,35 @@ _________________________
 
 Phone
 _________________________
+HTML Tags Summary
+Across all provided files, the following HTML tags are used:
+•	Document Structure: <!DOCTYPE html>, <html>, <head>, <title>, <meta>, <body>, <footer>, <style> 
+•	Text & Layout Content: <h1>, <h2>, <p>, <hr>, <div>, <br> 
+•	Links & Media: <a>, <img> 
+•	Tables: <table>, <tr>, <th>, <td> 
+•	Forms & Interactive Elements: <form>, <label>, <input> (text, password, date, file), <select>, <option>, <button> 
+CSS Features & Properties Summary
+The CSS styling spans internal <style> blocks and inline style="" attributes: 
+•	Global Reset: Universal selector * resetting margin: 0, padding: 0, and box-sizing: border-box. 
+•	Layout & Flexbox: Block level components using display: flex, flex-direction, justify-content, align-items, gap, centered alignment (margin: auto), fixed/fluid widths (px, %, vh), and absolute/relative positioning (position, z-index). 
+•	Typography: text-align, font-size, font-weight, font-family, line-height, letter-spacing, and text-decoration. 
+•	Styling & Effects: Card styling with border, border-radius, box-shadow, background colors (Hex, RGBA), pseudo-elements (::before), and background images (url(), background-size, opacity). 
+•	Table Styling: border-collapse: collapse with specific cell borders and padding. 
+•	Interactions: Pseudo-classes :hover and :focus, hover animations using transition and transform: scale(), and custom cursors (cursor: pointer). 
+•	Responsiveness: @media (max-width: 768px) media queries used to adjust layout padding, table sizes, font sizes, and force full-width layouts (width: 100%) on mobile. 
+HTML Tags Summary
+Across all provided files, the following HTML tags are used:
+•	Document Structure: <!DOCTYPE html>, <html>, <head>, <title>, <meta>, <body>, <footer>, <style> 
+•	Text & Layout Content: <h1>, <h2>, <p>, <hr>, <div>, <br> 
+•	Links & Media: <a>, <img> 
+•	Tables: <table>, <tr>, <th>, <td> 
+•	Forms & Interactive Elements: <form>, <label>, <input> (text, password, date, file), <select>, <option>, <button> 
+CSS Features & Properties Summary
+The CSS styling spans internal <style> blocks and inline style="" attributes: 
+•	Global Reset: Universal selector * resetting margin: 0, padding: 0, and box-sizing: border-box. 
+•	Layout & Flexbox: Block level components using display: flex, flex-direction, justify-content, align-items, gap, centered alignment (margin: auto), fixed/fluid widths (px, %, vh), and absolute/relative positioning (position, z-index). 
+•	Typography: text-align, font-size, font-weight, font-family, line-height, letter-spacing, and text-decoration. 
+•	Styling & Effects: Card styling with border, border-radius, box-shadow, background colors (Hex, RGBA), pseudo-elements (::before), and background images (url(), background-size, opacity). 
+•	Table Styling: border-collapse: collapse with specific cell borders and padding. 
+•	Interactions: Pseudo-classes :hover and :focus, hover animations using transition and transform: scale(), and custom cursors (cursor: pointer). 
+•	Responsiveness: @media (max-width: 768px) media queries used to adjust layout padding, table sizes, font sizes, and force full-width layouts (width: 100%) on mobile. 
