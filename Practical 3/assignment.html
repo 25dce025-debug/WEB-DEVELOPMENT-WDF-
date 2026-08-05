@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments</title>
-
+    <div
+    class="opaque-background-container">
     <style>
 
         *{
@@ -43,17 +44,17 @@
         table{
             width:100%;
             border-collapse:collapse;
-            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            box-shadow:0 4px 10px rgb(250, 249, 249);
         }
 
         th{
-            border:1px solid #000;
+            border:1px solid #fefefe;
             padding:15px;
             font-size:20px;
         }
 
         td{
-            border:1px solid #000;
+            border:1px solid #fcfafa;
             padding:12px;
             text-align:center;
             font-size:18px;
@@ -73,7 +74,7 @@
             border-radius:8px;
             font-size:18px;
             cursor:pointer;
-            box-shadow:0 3px 8px rgba(0,0,0,.2);
+            box-shadow:0 3px 8px rgb(251, 250, 250);
             transition:.3s;
         }
 
@@ -89,6 +90,7 @@
 
             th,td{
                 font-size:16px;
+                color:black;
                 padding:10px;
             }
 
@@ -158,7 +160,53 @@
 
 </table>
 
-<button>Upload Assignment</button>
+<button style="color: black;">Upload Assignment</button>
+</div>
+<style>
+.opaque-background-container {
+  position: relative; /* Establishes a reference for the background layer */
+  width: 100%;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  /* Optional: Set a fallback color underneath to ensure readability */
+  background-color: #000000; 
+}
+
+/* Create the isolated background layer */
+.opaque-background-container::before {
+  content: ""; /* Required to render the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Or use shorthand -> inset: 0; */
+  
+  /* Apply your background properties here */
+  background-image: url('D:\\studenthub\\images\\1653903314142198723_3418152504953493_7608013727901633946_n.webp');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Makes the background stay in place during scroll */
+  
+  /* Adjust transparency (Value between 0.0 and 1.0) */
+  opacity: 0.4; 
+  
+  /* Places the image layer behind the text content */
+  z-index: 1; 
+}
+
+/* Ensure the text content renders cleanly over the background */
+.opaque-background-container * {
+  position: relative;
+  z-index: 2; /* Must be a higher value than the pseudo-element z-index */
+  color: #ffffff; /* Contrast text color */
+}
+</style>
 
 </body>
 </html>
